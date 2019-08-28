@@ -19,7 +19,7 @@ export class Tab extends Handler {
     return false;
   }
 
-  public async open({ url, redirectUrl }: Handler.OpenOptions): Promise<any > {
+  public async open({ url, redirectUrl }: Handler.OpenOptions): Promise<object> {
     const tabWindow = window.open(url, '_blank');
     if (!tabWindow) {
       throw new SalteAuthError({
