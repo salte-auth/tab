@@ -13,7 +13,6 @@ describe('Tab', () => {
   beforeEach(() => {
     sinon.stub(parent.document, 'querySelector').returns('world');
     sinon.stub(parent.document.body, 'removeChild');
-    sinon.stub(Tab.prototype, 'clear');
 
     tab = new Tab();
   });
@@ -26,13 +25,8 @@ describe('Tab', () => {
     it('should default the window configuration', () => {
       const tab = new Tab();
 
-      expect(tab.config).to.deep.equal({
-        level: 'warn',
-        navigate: 'reload',
-        storage: 'session',
-        window: {
-          name: '@salte-auth/tab'
-        }
+      expect(tab.config.window).to.deep.equal({
+        name: '@salte-auth/tab'
       });
     });
   });
