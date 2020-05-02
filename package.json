@@ -1,6 +1,6 @@
 {
   "name": "@salte-auth/tab",
-  "version": "1.0.0-rc.2",
+  "version": "3.0.0",
   "main": "dist/tab.min.js",
   "module": "dist/tab.min.mjs",
   "types": "dist/tab.d.ts",
