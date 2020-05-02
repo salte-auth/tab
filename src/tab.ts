@@ -1,4 +1,4 @@
-import { Handler, SalteAuthError, Utils } from '@salte-auth/salte-auth';
+import { Handler, SalteAuthError, Utils, OAuth2Provider, OpenIDProvider } from '@salte-auth/salte-auth';
 
 export class Tab extends Handler {
   public constructor(config?: Tab.Config) {
@@ -19,7 +19,7 @@ export class Tab extends Handler {
     return false;
   }
 
-  public async open({ url, redirectUrl }: Handler.OpenOptions): Promise<object> {
+  public async open({ url, redirectUrl }: Handler.OpenOptions): Promise<OAuth2Provider.Validation | OpenIDProvider.Validation> {
     const tabWindow = window.open(url, '_blank');
     if (!tabWindow) {
       throw new SalteAuthError({
