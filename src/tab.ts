@@ -11,11 +11,11 @@ export class Tab extends Handler {
     });
   }
 
-  public get name() {
+  public get name(): string {
     return 'tab';
   }
 
-  public get auto() {
+  public get auto(): boolean {
     return false;
   }
 

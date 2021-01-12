@@ -9,7 +9,7 @@
   "homepage": "https://github.com/salte-auth/tab",
   "bugs": "https://github.com/salte-auth/tab/issues",
   "contributors": [
-    "Nick Woodward <nick@salte.io>",
+    "Ceci Woodward <ceci@salte.io>",
     "Dave Woodward <dave@salte.io>"
   ],
   "keywords": [
@@ -39,8 +39,8 @@
     "@babel/preset-typescript": "^7.9.0",
     "@babel/runtime": "^7.9.6",
     "@salte-auth/salte-auth": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.30.0",
-    "@typescript-eslint/parser": "^2.30.0",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
     "babel-plugin-istanbul": "^6.0.0",
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
@@ -51,7 +51,7 @@
     "karma": "^5.0.4",
     "karma-chrome-launcher": "^3.0.0",
     "karma-coverage": "^2.0.2",
-    "karma-mocha": "^1.3.0",
+    "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
     "karma-rollup-preprocessor": "^7.0.5",
     "karma-sauce-launcher": "^4.1.5",
